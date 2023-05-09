@@ -7,12 +7,11 @@ package loi.dev;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.List;
-import loi.dev.data.dao.Database;
 import loi.dev.data.dao.DatabaseDao;
+import loi.dev.data.model.Category;
 import loi.dev.data.model.Product;
 
 /**
@@ -24,6 +23,14 @@ public class HomeServlet extends BaseServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        List<Product> productList = DatabaseDao.getInstance().getProductDao().findAll();
+        List<Product> hotProductList = DatabaseDao.getInstance().getProductDao().hot();
+        List<Category> categoryList = DatabaseDao.getInstance().getCategoryDao().hotCategory();
+        
+        request.setAttribute("productList", productList);
+        request.setAttribute("hotProductList", hotProductList);
+        
+        request.setAttribute("categoryList", categoryList);
         request.getRequestDispatcher("home.jsp").include(request, response);
     }
 
