@@ -7,7 +7,7 @@
                             <ul class="footer-content-list">
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/69-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/69-300x300.jpg" alt="loi" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">DJI Phantom 4 Camera Drone</a>
@@ -26,7 +26,7 @@
                                 </li>
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/65-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/65-300x300.jpg" alt="loi" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">DJI Mavic Pro Camera Drone</a>
@@ -44,7 +44,7 @@
                                 </li>
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/61-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/61-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">ExoLens with Optics by ZEISS</a>
@@ -69,7 +69,7 @@
                             <ul class="footer-content-list">
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/16-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/16-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">Beats Studio Wireless Over-Ear</a>
@@ -88,7 +88,7 @@
                                 </li>
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/31-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/31-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">iPad Air 2</a>
@@ -106,7 +106,7 @@
                                 </li>
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/49-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/49-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">HP LaserJet P1102 (CE651A)</a>
@@ -131,7 +131,7 @@
                             <ul class="footer-content-list">
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/69-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/69-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">DJI Phantom 4 Camera Drone</a>
@@ -150,7 +150,7 @@
                                 </li>
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/65-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/65-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">DJI Mavic Pro Camera Drone</a>
@@ -168,7 +168,7 @@
                                 </li>
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/61-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/61-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">ExoLens with Optics by ZEISS</a>
@@ -193,7 +193,7 @@
                             <ul class="footer-content-list">
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/20-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/20-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">Bose SoundLink Mini</a>
@@ -211,7 +211,7 @@
                                 </li>
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/14-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/14-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">Bose® 35 Wireless Headphones</a>
@@ -230,7 +230,7 @@
                                 </li>
                                 <li class="footer-content-item">
                                     <a href="" class="footer-img-link">
-                                        <img src="/assets/img/8-300x300.jpg" alt="" class="footer-img">
+                                        <img src="./assets/img/8-300x300.jpg" alt="" class="footer-img">
                                     </a>
                                     <div class="footer-content-right">
                                         <a href="" class="footer-content-right-link">Beats Solo3 Wireless On-Ear</a>
@@ -251,7 +251,7 @@
                     </div>
                 </div>
                 <div class="footer-eletronic">
-                    <img src="/assets/img/logo-electronics-footer-ow6mdxhg8myw686zj9n6xqzax4q0tvup3aza1rl8lq.png"
+                    <img src="./assets/img/logo-electronics-footer-ow6mdxhg8myw686zj9n6xqzax4q0tvup3aza1rl8lq.png"
                         alt="" class="footer-eletronic-logo">
                     <div class="footer-eletronic-list">
                         <a href="" class="footer-eletronic-link">About Us</a>

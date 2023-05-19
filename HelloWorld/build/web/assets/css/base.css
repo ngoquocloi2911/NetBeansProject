@@ -36,6 +36,7 @@ html{
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 2px;
+    border: none;
 }
 .btn-size-s{
     height: 30px;
@@ -65,8 +66,8 @@ html{
 
 
 /* link under */
-.header__navbar-link-under{
-    
+.btn-cart{
+    border: none;
 }
 
 /* marin top */

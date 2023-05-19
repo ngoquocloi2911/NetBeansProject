@@ -12,6 +12,5 @@ public interface CategoryDao {
 	public Category find(int id);
 	public List<Category> findAll();
 	public List<Category> hotCategory();
-	public List<Category> findByCategory(int id);
 
 }

@@ -102,10 +102,11 @@ public class ProductImpl implements ProductDao {
     @Override
     public List<Product> findAll() {
         // TODO Auto-generated method stub
-        List<Product> proList = new ArrayList<>();
-        String sql = "SELECT * FROM PRODUCTS";
+       List<Product> proList = new ArrayList<>();
+        String sql = "SELECT * FROM PRODUCTS ORDER BY VIEW DESC LIMIT ?";
         try {
             PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setInt(1, Constants.VIEW_NUMBER2);
 
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/category.css">
+    <link rel="stylesheet" href="./assets/css/wishlist.css">
     <!-- <script src="./assets/js/main.js"></script> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -26,7 +27,7 @@
     <!--[if lt IE 9]>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <title>PageShop</title>
+    <title>CornSalad Store</title>
 </head>
 
 <body>
@@ -87,7 +88,7 @@
 
                             <ul class="header__navbar-list">
                                 <li class="header__navbar-item header__navbar-item--separa">
-                                    <a href="" class="header__navbar-link">
+                                    <a href="http://localhost:8080/CornSaladStore/LoginServlet" class="header__navbar-link">
                                         <i class="header__navbar-icon fa-solid fa-user"></i>
                                         Log in/ Sign up
                                     </a>
@@ -124,7 +125,7 @@
                 <div class="container">
                     <div class="header__with-search">
                         <div class="header__with-logo">
-                            <a href="" class="header__with-link">
+                            <a href="http://localhost:8080/CornSaladStore/HomeServlet" class="header__with-link">
                                 <img src="./assets/img/logo.png" alt="" class="header__with-img">
                             </a>
                         </div>

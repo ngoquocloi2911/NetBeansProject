@@ -529,7 +529,8 @@ span.header__search-heart-lable {
 
 }
 
-.heading-item {}
+.heading-item {
+}
 
 .heading-text {
     display: block;
@@ -556,7 +557,8 @@ span.header__search-heart-lable {
 
 }
 
-.heading-text {}
+.heading-text {
+}
 
 /* product - item */
 .product-item {
@@ -643,7 +645,8 @@ span.header__search-heart-lable {
     transform: translate(4px);
 }
 
-.product-image-wrap:hover {}
+.product-image-wrap:hover {
+}
 
 .product-image-wrap-link {
     text-decoration: none;
@@ -721,7 +724,7 @@ span.header__search-heart-lable {
 }
 
 .product-price-disable {
-    text-decoration: line-through;
+/*    text-decoration: line-through;*/
 }
 
 ._btn-product:hover {
@@ -768,7 +771,8 @@ span.header__search-heart-lable {
     width: 450px;
 }
 
-.container-phantom-content {}
+.container-phantom-content {
+}
 
 .container-phantom-right {
     background-color: #00acc1;
@@ -1087,7 +1091,7 @@ span.header__search-heart-lable {
 }
 
 .img-container {
-    background-image: url(/assests/img/img-1.jpg);
+    background-image: url(https://xstore.8theme.com/elementor/demos/electronics/wp-content/uploads/sites/49/2016/05/Untitled-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1235,9 +1239,11 @@ span.header__search-heart-lable {
     border-bottom: 1px solid var(--boder-color);
 }
 
-.footer-eletronic-logo {}
+.footer-eletronic-logo {
+}
 
-.footer-eletronic-list {}
+.footer-eletronic-list {
+}
 
 .footer-eletronic-link {
     text-decoration: none;
@@ -1261,7 +1267,8 @@ span.header__search-heart-lable {
 
 }
 
-.footer-coppyright-content {}
+.footer-coppyright-content {
+}
 
 .coppyright-content-text {
     font-size: 1.6rem;
@@ -1279,7 +1286,8 @@ span.header__search-heart-lable {
     opacity: 0.6;
 }
 
-.content-payment-link {}
+.content-payment-link {
+}
 
 .coppyright-content-payment {
     float: right;

@@ -24,12 +24,12 @@
                     </div>
                     <div class="row">
                         <c:forEach items="${product.galleries}" var="image">
-                        <div class="col-md-3">
-                            <div class="product-content-bottom">
-                                <img src="${image.url}" alt=""
-                                     class="product-content-bottom-img-saferi">
+                            <div class="col-md-3">
+                                <div class="product-content-bottom">
+                                    <img src="${image.url}" alt=""
+                                         class="product-content-bottom-img-saferi">
+                                </div>
                             </div>
-                        </div>
                         </c:forEach>
                     </div>
                 </div>
@@ -51,16 +51,17 @@
                             adipisicing elit. Vero quos, ullam quidem suscipit, doloribus laboriosam unde libero
                             necessitatibus ipsa autem excepturi dolorum modi voluptatem quia cum optio!
                             Adipisci, aut placeat!</span>
-                        <div class="product-content-right-form">
+                        <form class="product-content-right-form" action="CartServlet" method="post">
+                            <input type="hidden" name="action" value="create"/>
+                            <input type="hidden" name="productId" value="${product.id}"/>
+                            <input type="hidden" name="productPrice" value="${product.price}"/>
                             <div class="product-content-right-quality">
-                                <button class="quality-subtraction">-</button>
-                                <span class="quality-number">1</span>
-                                <button class="quality-subtraction">+</button>
+                                <input name="quantity" value="1" type="number" min="1" class="quality-number"/>
                             </div>
-                            <button class="_btn _btn-quality"><i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                                add to
-                                cart</button>
-                        </div>
+                            <button class="_btn _btn-quality" type="submit"><i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                                add to cart 
+                            </button>
+                        </form>
                         <a href="#" class="product-content-right-reload"><i
                                 class="product-content-right-icon fa-solid fa-arrows-rotate"></i>Add
                             to compare</a>
@@ -124,7 +125,7 @@
             <div class="row mrt-48">
                 <div class="col-md-6">
                     <div class="w3-editor-container">
-                        <img src="./assests/img/4-300x300.jpg" alt="" class="w3-editor-img">
+                        <img src="./assets/img/4-300x300.jpg" alt="" class="w3-editor-img">
                     </div>
                 </div>
                 <div class="col-md-6">

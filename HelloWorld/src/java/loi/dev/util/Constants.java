@@ -13,5 +13,6 @@ public class Constants {
     public static final String USER = "root";
     public static final String PASS = "123456";
     
-    public static final int VIEW_NUMBER = 6;
+    public static final int VIEW_NUMBER = 4;
+     public static final int VIEW_NUMBER2 = 8;
 }

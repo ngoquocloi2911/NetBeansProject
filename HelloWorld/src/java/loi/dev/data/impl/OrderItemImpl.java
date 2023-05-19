@@ -9,7 +9,6 @@ import java.util.List;
 
 import loi.dev.data.dao.OrderItemDao;
 import loi.dev.data.driver.MySQLDriver;
-import loi.dev.data.model.Category;
 import loi.dev.data.model.OrderItem;
 
 public class OrderItemImpl implements OrderItemDao {
@@ -21,10 +20,10 @@ public class OrderItemImpl implements OrderItemDao {
 		String sql = "INSERT INTO ORDER_ITEMS VALUES(NULL, ?, ?, ?, ?,)";
 		try {
 			PreparedStatement stmt = con.prepareStatement(sql);
-			stmt.setInt(1, order_Item.getQuanlity());
+			stmt.setInt(1, order_Item.getQuantity());
 			stmt.setDouble(2, order_Item.getPrice());
 			stmt.setInt(3, order_Item.getOrderId());
-			stmt.setInt(4, order_Item.getProductID());
+			stmt.setInt(4, order_Item.getProductId());
 			
 			stmt.execute();
 		} catch (SQLException e) {
@@ -37,13 +36,13 @@ public class OrderItemImpl implements OrderItemDao {
 	@Override
 	public boolean update(OrderItem order_Item) {
 		// TODO Auto-generated method stub
-		String sql = "UPDATE ORDER_ITEMS SET quality = ?, price = ?, order_id = ?, product_id = ? WHERE id = ?";
+		String sql = "UPDATE ORDER_ITEMS SET quatity = ?, price = ?, order_id = ?, product_id = ? WHERE id = ?";
 		try {
 			PreparedStatement stmt = con.prepareStatement(sql);
-			stmt.setInt(1,order_Item.getQuanlity());
+			stmt.setInt(1,order_Item.getQuantity());
 			stmt.setDouble(2, order_Item.getPrice());
 			stmt.setInt(3, order_Item.getOrderId());
-			stmt.setInt(4, order_Item.getProductID());
+			stmt.setInt(4, order_Item.getProductId());
 			return stmt.execute();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -77,12 +76,12 @@ public class OrderItemImpl implements OrderItemDao {
 			
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
-				int quanlity = rs.getInt("quanlity");
+				int quantity = rs.getInt("quantity");
 				double price = rs.getDouble("price");
 				int orderId = rs.getInt("order_id");
 				int productId = rs.getInt("product_id");
 				
-				return new OrderItem(quanlity, price, orderId, productId);
+				return new OrderItem(quantity, price, orderId, productId);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -102,12 +101,12 @@ public class OrderItemImpl implements OrderItemDao {
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
 				int id = rs.getInt("id");
-				int quanlity = rs.getInt("quanlity");
+				int quantity = rs.getInt("quantity");
 				double price = rs.getDouble("price");
 				int orderId = rs.getInt("order_id");
 				int productId = rs.getInt("product_id");
 				
-				orList.add(new OrderItem(quanlity, price, orderId, productId));
+				orList.add(new OrderItem(quantity, price, orderId, productId));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -117,7 +116,7 @@ public class OrderItemImpl implements OrderItemDao {
 	}
 
 	@Override
-	public List<OrderItem> findByOderItem(int id) {
+	public List<OrderItem> findByOder(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -28,11 +28,8 @@
         <!-- top new product -->
         <div class="row">
             <c:forEach items="${productList}" var="product">
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-6 col-sx-12">
                     <div class="product-item">
-                        <div class="sale-wrapper">
-                            <span class="sale-wrapper-text">Sale</span>
-                        </div>
                         <div class="product-image-wrap">
                             <a href="ProductDetailServlet?productId=${product.id}" class="product-image-wrap-link">
                                 <img src="${product.thumbnail}" alt="" class="product-image">
@@ -44,20 +41,18 @@
                                 <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
                             </ul>
                         </div>
-                        <div class="product-footer">
-                            <span class="product-short-desc">
-                                ${product.description}
-                            </span>
+                        <form class="product-footer" action="CartServlet" method="post">
+                            <input type="hidden" name="action" value="create"/>
+                            <input type="hidden" name="quantity" value="1"  min="1" />
+                            <input type="hidden" name="productId" value="${product.id}"/>
+                            <input type="hidden" name="productPrice" value="${product.price}"/>
+                            <span class="product-short-desc">${product.description}</span>
                             <h1 class="product-title">${product.name}</h1>
                             <div class="product-price">
-                                <span class="product-price-1 product-price-disable ">$${product.price} </span>
-                                <span class="product-price-2">$150.000</span>
+                                <span class="product-price-1">$${product.price} </span>
                             </div>
-
-
-
-                            <div class="_btn _btn-product">Add to cart</div>
-                        </div>
+                            <button type="submit" class="_btn _btn-product">Add to cart</button>
+                        </form>
 
                     </div>
                 </div>
@@ -131,7 +126,9 @@
                 <c:forEach items="${categoryList}" var="category">
                     <div class="col-md-3">
                         <div class="Featured-categories">
-                            <img src="${category.thumbnail}" alt="" class="Featured-categories-img">
+                            <a href="CategoryServlet?categoryId=${category.id}">
+                                <img src="${category.thumbnail}" alt="" class="Featured-categories-img">
+                            </a>
                             <ul class="Featured-categories-list">
                                 <li class="Featured-categories-item ">
                                     <a href="CategoryServlet?categoryId=${category.id}" class="Featured-categories-link Featured-categories-link-first">${category.name}</a>
@@ -172,9 +169,6 @@
                         <c:forEach items="${hotProductList}" var="product">
                             <div class="col-md-6">
                                 <div class="product-item">
-                                    <div class="sale-wrapper">
-                                        <span class="sale-wrapper-text">Sale</span>
-                                    </div>
                                     <div class="product-image-wrap">
                                         <a href="ProductDetailServlet?productId=${product.id}" class="product-image-wrap-link">
                                             <img src="${product.thumbnail}" alt="" class="product-image">
@@ -186,20 +180,18 @@
                                             <li> <a href=""><i class="fa-regular fa-heart"></i></a></li>
                                         </ul>
                                     </div>
-                                    <div class="product-footer">
-                                        <span class="product-short-desc">
-                                            ${product.description}
-                                        </span>
+                                    <form class="product-footer" action="CartServlet" method="post">
+                                        <input type="hidden" name="action" value="create"/>
+                                        <input type="hidden" name="quantity" value="1"  min="1" />
+                                        <input type="hidden" name="productId" value="${product.id}"/>
+                                        <input type="hidden" name="productPrice" value="${product.price}"/>
+                                        <span class="product-short-desc">${product.description}</span>
                                         <h1 class="product-title">${product.name}</h1>
                                         <div class="product-price">
-                                            <span class="product-price-1 product-price-disable ">$${product.price} </span>
-                                            <span class="product-price-2">$150.000</span>
+                                            <span class="product-price-1">$${product.price} </span>
                                         </div>
-
-
-
-                                        <div class="_btn _btn-product">Add to cart</div>
-                                    </div>
+                                        <button type="submit" class="_btn _btn-product">Add to cart</button>
+                                    </form>
 
                                 </div>
                             </div>
@@ -232,7 +224,7 @@
                             <span class="lastest-general-text">General</span>
                         </div>
                         <div class="latest-wrap-img">
-                            <a href="" class="latest-wrap-img-link">
+                            <a href="#" class="latest-wrap-img-link">
                                 <img src="./assets/img/5.jpg" alt="" class="latest-img">
                             </a>
                         </div>
